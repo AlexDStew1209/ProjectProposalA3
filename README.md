@@ -1,4 +1,4 @@
-# Project Proposal 1: Name?
+# Project Proposal 1: Minesweeper
 desription of the project...
 
 ## GUI Mockup #1
@@ -9,7 +9,7 @@ desription of the project...
 
 ## Class Diagram #1
 
-# Project Proposal 2: Name?
+# Project Proposal 2: Street Fighter
 desription of the project...
 
 ## GUI Mockup #1
