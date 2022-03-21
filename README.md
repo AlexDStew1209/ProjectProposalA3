@@ -1,4 +1,4 @@
-# Project Proposal 1: Minesweeper
+# Project Proposal 1: Minesweeper!
 desription of the project...
 
 ## GUI Mockup #1
