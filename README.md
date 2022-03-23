@@ -15,7 +15,7 @@ Group Members: Alex Stewart, Jasper Mowdood, Stuart Pahnke
 ![End of Game](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/GUIMockup2.jpg?raw=true)
 
 ## Class Diagram #1
-
+![gui mockup](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/minesweeperUML.png?raw=true)
 # Project Proposal 2: Street Fighter
 desription of the project...
 
