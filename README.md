@@ -1,5 +1,6 @@
 # Project Proposal 1: Minesweeper!
 desription of the project...
+Group Members: Alex Stewart, Jasper Mowdood, Stuart Pahnke
 
 ## GUI Mockup #1
 
