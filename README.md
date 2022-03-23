@@ -1,5 +1,5 @@
 # Project Proposal 1: Minesweeper!
-desription of the project...
+desription of the project: Minesweeper Game. 16x16 grid, with 40 mines.
 Group Members: Alex Stewart, Jasper Mowdood, Stuart Pahnke
 
 ## GUI Mockup #1 (Start screen)
