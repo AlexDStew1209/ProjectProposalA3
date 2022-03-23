@@ -8,7 +8,7 @@ Group Members: Alex Stewart, Jasper Mowdood, Stuart Pahnke
 
 ## GUI Mockup #2 (Gameplay)
 
-![start Screen]()
+![start Screen](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/StartScreen.png?raw=true)
 
 ## GUI Mockup #3 (End of Game)
 
