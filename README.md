@@ -12,7 +12,7 @@ Group Members: Alex Stewart, Jasper Mowdood, Stuart Pahnke
 
 ## GUI Mockup #3 (End of Game)
 
-![End of Game]()
+![End of Game](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/GUIMockup2.jpg?raw=true)
 
 ## Class Diagram #1
 
