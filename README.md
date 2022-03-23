@@ -8,7 +8,11 @@ Group Members: Alex Stewart, Jasper Mowdood, Stuart Pahnke
 
 ## GUI Mockup #2 (Gameplay)
 
+![start Screen]()
+
 ## GUI Mockup #3 (End of Game)
+
+![End of Game]()
 
 ## Class Diagram #1
 
