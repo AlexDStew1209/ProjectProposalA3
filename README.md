@@ -8,22 +8,31 @@ Group Members: Alex Stewart, Jasper Mowdood, Stuart Pahnke
 
 ## GUI Mockup #2 (Gameplay)
 
-![start Screen]()
+![Gameplay]()
 
 ## GUI Mockup #3 (End of Game)
 
 ![End of Game](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/GUIMockup2.jpg?raw=true)
 
 ## Class Diagram #1
-![gui mockup](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/minesweeperUML.png?raw=true)
+![UML ](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/minesweeperUML.png?raw=true)
 # Project Proposal 2: Street Fighter
 desription of the project...
 
 ## GUI Mockup #1 (Start screen)
+
 ![start Screen](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/StreetFighter.png?raw=true)
+
 ## GUI Mockup #2 (Gameplay)
+
+![Gameplay]()
 
 ## GUI Mockup #3  (End of Game)
 
+![EndGame]()
+
+
 ## Class Diagram #1
+
+![UML]()
 
