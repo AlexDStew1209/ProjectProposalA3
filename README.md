@@ -25,7 +25,7 @@ desription of the project...
 
 ## GUI Mockup #2 (Gameplay)
 
-![Gameplay]()
+![Gameplay](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/gui2StreetFighter.jpg?raw=true)
 
 ## GUI Mockup #3  (End of Game)
 
