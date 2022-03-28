@@ -21,7 +21,7 @@ desription of the project: 1v1 pvp fighting game with special abilities and atta
 
 ## GUI Mockup #1 (Start screen)
 
-![start Screen](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/StreetFighter.png?raw=true)
+![start Screen](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/StreetFighter%20(1).png?raw=true)
 
 ## GUI Mockup #2 (Gameplay)
 
