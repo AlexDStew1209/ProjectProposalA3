@@ -29,7 +29,7 @@ desription of the project: 1v1 pvp fighting game with special abilities and atta
 
 ## GUI Mockup #3  (End of Game)
 
-![EndGame]()
+![EndGame](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/endscreenSF.png?raw=true)
 
 
 ## Class Diagram #1
