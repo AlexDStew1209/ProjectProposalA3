@@ -4,7 +4,7 @@ Group Members: Alex Stewart, Jasper Mowdood, Stuart Pahnke
 
 ## GUI Mockup #1 (Start screen)
 
-![start Screen]()
+![start Screen](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/explosion.png?raw=true)
 
 ## GUI Mockup #2 (Gameplay)
 
