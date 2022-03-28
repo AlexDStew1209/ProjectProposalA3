@@ -34,5 +34,5 @@ desription of the project: 1v1 pvp fighting game with special abilities and atta
 
 ## Class Diagram #1
 
-![UML]()
+![UML](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/streetFighterUML.png?raw=true)
 
