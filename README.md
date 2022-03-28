@@ -17,7 +17,7 @@ Group Members: Alex Stewart, Jasper Mowdood, Stuart Pahnke
 ## Class Diagram #1
 ![UML ](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/minesweeperUML.png?raw=true)
 # Project Proposal 2: Street Fighter
-desription of the project...
+desription of the project: 1v1 pvp fighting game with special abilities and attacks
 
 ## GUI Mockup #1 (Start screen)
 
