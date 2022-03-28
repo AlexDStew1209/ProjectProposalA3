@@ -8,7 +8,7 @@ Group Members: Alex Stewart, Jasper Mowdood, Stuart Pahnke
 
 ## GUI Mockup #2 (Gameplay)
 
-![Gameplay]()
+![Gameplay](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/GuiMockup2.png?raw=true)
 
 ## GUI Mockup #3 (End of Game)
 
