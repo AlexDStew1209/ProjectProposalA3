@@ -12,14 +12,13 @@
 
 def setup():
     size(1500, 1000)
-    background(40)
-    logo = loadImage("")
-    
+    background(110)
 def draw():
     background(127)
     startScreen()
 
 def startScreen():
+    logo = loadImage("SpaceAssailents.png")
     background(40)
     fill(60)
     rect(100,100,1300,800)
@@ -29,5 +28,4 @@ def startScreen():
     text("Welcome to Space Assailant", 750,75)
     textSize(50)
     text("Press Space to start", 750,975)
-    imageMode(CENTER)
     image(logo,750,500)
