@@ -39,3 +39,17 @@ def startScreen():
     elif screenLayer == 1:
         text("Test",750,500)
         
+def endScreen():
+    logo = loadImage("")
+    background(40)
+    fill (60)
+    rect(250,25,1000,200)
+    fill(255)
+    textSize(170)
+    textAlign(CENTER)
+    text("Player x Wins!",750,175)
+    fill(60)
+    rect(400,250,700,700)
+    textAlign(CENTER)
+    textSize(60)
+    text("Health: ",750,375)
