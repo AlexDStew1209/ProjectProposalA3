@@ -52,4 +52,7 @@ def endScreen():
     rect(400,250,700,700)
     textAlign(CENTER)
     textSize(60)
+    fill(255)
     text("Health: ",750,375)
+    textSize(40)
+    text("To play again, press x",750,900)
