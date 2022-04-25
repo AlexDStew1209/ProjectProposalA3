@@ -13,32 +13,46 @@ screenLayer = 0
 def setup():
     size(1500, 1000)
     background(151, 50, 201)
-
+    
+    
 def draw():
+    global screenLayer
     background(127)
-    startScreen()
+    if screenLayer == 0:
+        startScreen()
+    elif screenLayer == 1:
+        instructScreen()
+    elif screenLayer == 2:
+        endScreen()
 
 def startScreen():
-    if screenLayer == 0:
-        logo = loadImage("SpaceAssailents.png")
-        background(40)
-        fill(60)
-        rect(100,100,1300,800)
-        fill(255)
-        textSize(72)
-        textAlign(CENTER)
-        text("Welcome to Space Assailant", 750,75)
-        textSize(50)
-        text("Press any key to start", 750,975)
-        image(logo,750,500)
-        if keyPressed == True:
-            screenLayer = 1
-        elif keyPressed == False:
-            screenLayer = 0
-            
-    elif screenLayer == 1:
-        text("Test",750,500)
+    logo = loadImage("SpaceAssailents.png")
+    background(40)
+    fill(60)
+    rect(100,100,1300,800)
+    fill(255)
+    textSize(72)
+    textAlign(CENTER)
+    text("Welcome to Space Assailant", 750,75)
+    textSize(50)
+    text("Press S to start", 750,975)
+    image(logo,750,500)
         
+def instructScreen():
+    text("test",750,500)
+        
+def keyPressed():
+    global screenLayer
+    # if key == CODED:
+    #     if keyCode == UP:
+    #         screenLayer = 1
+    
+    if key == ' ':
+        screenLayer = 1
+    if key == '1':
+        screenLayer = 2
+            
+
 def endScreen():
     logo = loadImage("")
     background(40)
