@@ -23,7 +23,13 @@ def draw():
     elif screenLayer == 1:
         instructScreen()
     elif screenLayer == 2:
-        endScreen()
+        playScreen()
+        
+        
+def playScreen():
+    background1 = loadImage("BackgroundForSpaceKerfuffle.png")
+    imageMode(CORNER)
+    image(background1,100,100)
 
 def startScreen():
     logo = loadImage("Logo.png")
@@ -36,6 +42,7 @@ def startScreen():
     text("Welcome to Space Assailant", 750,75)
     textSize(50)
     text("Press space to start", 750,975)
+    imageMode(CENTER)
     image(logo,750,500)
         
 def instructScreen():
