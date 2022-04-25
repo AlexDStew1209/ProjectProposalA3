@@ -26,7 +26,7 @@ def draw():
         endScreen()
 
 def startScreen():
-    logo = loadImage("SpaceAssailents.png")
+    logo = loadImage("Logo.png")
     background(40)
     fill(60)
     rect(100,100,1300,800)
