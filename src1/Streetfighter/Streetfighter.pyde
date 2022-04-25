@@ -1,8 +1,8 @@
-# from Arm import Arm
-# from Platform import Platform
-# from Player import Player
-# from Powerup import Powerup
-# from Shield import Shield
+# from Arm import *
+# from Platform import *
+# from Player import *
+# from Powerup import *
+# from Shield import *
 # c1 = Arm()
 # c2 = Platform()
 # c3 = Player()
@@ -35,18 +35,28 @@ def startScreen():
     textAlign(CENTER)
     text("Welcome to Space Assailant", 750,75)
     textSize(50)
-    text("Press S to start", 750,975)
+    text("Press space to start", 750,975)
     image(logo,750,500)
         
 def instructScreen():
-    text("test",750,500)
+    background(40)
+    fill(60)
+    rect(100,100,1300,800)
+    fill(255)
+    textSize(56)
+    textAlign(CENTER)
+    text("Player 1: use WASD for movement, and F for punch", 750,200)
+    text("Player 2: use IJKL for movement, and O for punch", 750,275)
+    textSize(68)
+    text("To Win:", 750,350)
+    textSize(56)
+    text("Push your opponent off the board:", 750,425)
+    text("Or remove all their health", 750,500)
+    textSize(68)
+    text("Press 1 to continue", 750,600)
         
 def keyPressed():
     global screenLayer
-    # if key == CODED:
-    #     if keyCode == UP:
-    #         screenLayer = 1
-    
     if key == ' ':
         screenLayer = 1
     if key == '1':
