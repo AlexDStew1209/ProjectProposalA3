@@ -9,8 +9,8 @@ from Player import *
 # c4 = Powerup()
 # c5 = Shield()
 screenLayer = 0
-p1 = Player(200,200,252,186,3)
-p2 = Player(500,200,171,26,26)
+p1 = Player(200,200)
+p2 = Player(500,200)
 
 
 def setup():
