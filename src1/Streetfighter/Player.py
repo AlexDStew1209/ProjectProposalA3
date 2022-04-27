@@ -6,30 +6,31 @@ class Player:
     y = 0
     health = 100
     lives = 3
-    pColor1 = 0
-    pColor2 = 0
-    pColor3 = 0
+    directionRight = True
     #Constructor
-    def __init__(self,x,y,pColor1,pColor2,pColor3):
+    def __init__(self,x,y):
         self.x = x
         self.y = y
         self.health = 100
         self.lives = 3
-        self.pColor2 = pColor2
-        self.pColor1 = pColor1
-        self.pColor3 = pColor3
+        self.directionRight = True
     #Methods
     def display(self):
-        fill(self.pColor1,self.pColor2,self.pColor3)
-        rect(self.x,self.y,75,150)
-        fill(168,168,167)
-        rect(self.x,self.y,75,50)
+        p1Right = loadImage("p1Right.png")
+        p1Left = loadImage("p1Left.png")
+        if self.directionRight = True:
+            image(self.p1Right,self.x,self.y)
+        elif self.directionRight = False:
+            image(self.p1Left,self.x,self.y)
+            
         
     def moveRight(self):
         self.x += 5
+        self.directionRight = True
         
     def moveLeft(self):
         self.x -= 5
+        self.directionRight = False
         
     def moveJump(self):
         self.x += 1
