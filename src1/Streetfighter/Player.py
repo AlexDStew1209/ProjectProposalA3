@@ -19,5 +19,18 @@ class Player:
     #Methods
     def display(self):
         fill(self.pColor1,self.pColor2,self.pColor3)
-        rect(self.x,self.y,100,200)
+        rect(self.x,self.y,75,150)
+        fill(168,168,167)
+        rect(self.x,self.y,75,50)
+        
+    def moveRight(self):
+        self.x += 5
+        
+    def moveLeft(self):
+        self.x -= 5
+        
+    def moveJump(self):
+        self.x += 1
+        
+    
         
