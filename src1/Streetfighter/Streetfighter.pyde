@@ -24,6 +24,8 @@ def draw():
         instructScreen()
     elif screenLayer == 2:
         playScreen()
+    elif screenLayer == 3:
+        endScreen()
         
         
 def playScreen():
@@ -60,14 +62,23 @@ def instructScreen():
     text("Push your opponent off the board:", 750,425)
     text("Or remove all their health", 750,500)
     textSize(68)
-    text("Press 1 to continue", 750,600)
+    text("Press space to continue", 750,600)
         
 def keyPressed():
     global screenLayer
     if key == ' ':
-        screenLayer = 1
+        if screenLayer == 0:
+            screenLayer = 1
+        elif screenLayer == 1:
+            screenLayer = 2
     if key == '1':
-        screenLayer = 2
+        screenLayer = 3
+    if screenLayer == 2:
+        if key == 'a':
+            p1.moveLeft()
+        elif key == 'd':
+            p1.moveRight()
+    
             
 
 def endScreen():
