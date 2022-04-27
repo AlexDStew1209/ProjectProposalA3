@@ -18,9 +18,9 @@ class Player:
     def display(self):
         p1Right = loadImage("p1Right.png")
         p1Left = loadImage("p1Left.png")
-        if self.directionRight = True:
+        if self.directionRight == True:
             image(self.p1Right,self.x,self.y)
-        elif self.directionRight = False:
+        elif self.directionRight == False:
             image(self.p1Left,self.x,self.y)
             
         
