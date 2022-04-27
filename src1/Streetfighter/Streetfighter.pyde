@@ -1,6 +1,6 @@
 # from Arm import *
 # from Platform import *
-# from Player import *
+from Player import *
 # from Powerup import *
 # from Shield import *
 # c1 = Arm()
@@ -9,6 +9,9 @@
 # c4 = Powerup()
 # c5 = Shield()
 screenLayer = 0
+p1 = Player(200,200,252,186,3)
+p2 = Player(500,200,171,26,26)
+
 
 def setup():
     size(1500, 1000)
@@ -32,6 +35,8 @@ def playScreen():
     background1 = loadImage("BackgroundForSpaceKerfuffle.png")
     imageMode(CORNER)
     image(background1,100,100)
+    p1.display()
+    p2.display()
 
 def startScreen():
     logo = loadImage("Logo.png")
@@ -78,6 +83,10 @@ def keyPressed():
             p1.moveLeft()
         elif key == 'd':
             p1.moveRight()
+        if key == 'j':
+            p2.moveLeft()
+        elif key == 'l':
+            p2.moveRight()
     
             
 
