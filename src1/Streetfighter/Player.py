@@ -13,6 +13,8 @@ class Player:
     def __init__(self,x,y,pColor1,pColor2,pColor3):
         self.x = x
         self.y = y
+        self.health = 100
+        self.lives = 3
         self.pColor2 = pColor2
         self.pColor1 = pColor1
         self.pColor3 = pColor3
