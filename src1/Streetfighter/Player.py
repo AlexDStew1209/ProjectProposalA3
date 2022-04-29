@@ -8,32 +8,37 @@ class Player:
     lives = 3
     directionRight = True
     #Constructor
-    def __init__(self,x,y):
+    def __init__(self,x,y,pNum):
         self.x = x
         self.y = y
         self.health = 100
         self.lives = 3
         self.directionRight = True
+        self.pNum = pNum
     #Methods
     def display(self):
-        p1Right = loadImage("p1Right.png")
-        p1Left = loadImage("p1Left.png")
+        if self.pNum == 1:
+            pRight = loadImage("p1Right.png")
+            pLeft = loadImage("p1Left.png")
+        elif self.pNum == 2:
+            pRight = loadImage("p2Right.png")
+            pLeft = loadImage("p2Left.png")
         if self.directionRight == True:
-            image(p1Right,self.x,self.y)
+            image(pRight,self.x,self.y)
         elif self.directionRight == False:
-            image(p1Left,self.x,self.y)
+            image(pLeft,self.x,self.y)
             
         
     def moveRight(self):
-        self.x += 5
+        self.x += 7
         self.directionRight = True
         
     def moveLeft(self):
-        self.x -= 5
+        self.x -= 7
         self.directionRight = False
         
-    def moveJump(self):
-        self.x += 1
+    def moveUp(self):
+        self.y -= 5
         
     
         
