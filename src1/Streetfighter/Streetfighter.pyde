@@ -9,8 +9,8 @@ from Player import *
 # c4 = Powerup()
 # c5 = Shield()
 screenLayer = 0
-p1 = Player(200,200)
-p2 = Player(500,200)
+p1 = Player(200,200,1)
+p2 = Player(500,200,2)
 
 
 def setup():
@@ -83,13 +83,15 @@ def keyPressed():
             p1.moveLeft()
         elif key == 'd':
             p1.moveRight()
-        if key == 'j':
+        elif key == 'j':
             p2.moveLeft()
         elif key == 'l':
             p2.moveRight()
+        elif key == 'w':
+            p1.moveUp()
+        elif key == 'i':
+            p2.moveUp()
     
-            
-
 def endScreen():
     logo = loadImage("")
     background(40)
