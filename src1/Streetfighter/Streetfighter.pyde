@@ -91,6 +91,10 @@ def keyPressed():
             p1.moveUp()
         elif key == 'i':
             p2.moveUp()
+        elif key == 'f':
+            p1.attack()
+        elif key == 'h':
+            p2.attack()
     
 def endScreen():
     logo = loadImage("")
