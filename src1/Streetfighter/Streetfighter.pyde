@@ -37,6 +37,8 @@ def playScreen():
     image(background1,100,100)
     p1.display()
     p2.display()
+    scoreboard()
+    
 
 def startScreen():
     logo = loadImage("Logo.png")
@@ -93,9 +95,20 @@ def keyPressed():
             p2.moveUp()
         elif key == 'f':
             p1.attack()
+            player1PlayerAttackDetection()
         elif key == 'h':
             p2.attack()
-    
+            player2PlayerAttackDetection()
+
+def player1PlayerAttackDetection():
+    if dist(p1.x,p1.y,p2.x,p2.y) < 43:
+        p2.health = p2.health - p1.damage
+        
+        
+def player2PlayerAttackDetection():
+    if dist(p1.x,p1.y,p2.x,p2.y) < 43:
+        p1.health = p1.health - p2.damage
+        
 def endScreen():
     logo = loadImage("")
     background(40)
@@ -116,3 +129,9 @@ def endScreen():
     text("By Alex Stewart, Jasper Mowdood and Stuart Pahnke ",750,550)
     textSize(70)
     text("To play again, press x",750,900)
+    
+def scoreboard():
+    textSize(40)
+    textAlign(CENTER)
+    text(p1.health,100,50)
+    text(p2.health,200,50)
