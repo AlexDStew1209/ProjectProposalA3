@@ -21,13 +21,22 @@ class Player:
         if self.pNum == 1:
             pRight = loadImage("p1Right.png")
             pLeft = loadImage("p1Left.png")
+            pPunchL = loadImage("p1punchL.png")
+            pPunchR = loadImage("p1punchR.png")
         elif self.pNum == 2:
             pRight = loadImage("p2Right.png")
             pLeft = loadImage("p2Left.png")
+            pPunchL = loadImage("p2punchL.png")
+            pPunchR = loadImage("p2punchR.png")
         if self.pDirection == 1:
             image(pRight,self.x,self.y)
         elif self.pDirection == 2:
             image(pLeft,self.x,self.y)
+        elif self.pDirection == 3:
+            image(pPunchR,self.x,self.y)
+        elif self.pDirection == 4:
+            image(pPunchL,self.x,self.y)
+
             
         
     def moveRight(self):
@@ -42,9 +51,9 @@ class Player:
         self.y -= 5
         
     def attack(self):
-        if self.pDirection == 1 or 3:
+        if self.pDirection == 1 or self.pDirection == 3:
             self.pDirection = 3
-        if self.pDirection == 2 or 4:
+        elif self.pDirection == 2 or self.pDirection == 4:
             self.pDirection = 4 
         
         
