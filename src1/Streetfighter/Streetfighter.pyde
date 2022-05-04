@@ -40,9 +40,11 @@ def playScreen():
         image(background1,100,100)
         p1.display()
         p2.display()
+        fill(255,0,0)
+        rect(100,850,1300,50)
         scoreboard()
         gameOverLogic()
-    
+
 
 def startScreen():
     logo = loadImage("Logo.png")
