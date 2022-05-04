@@ -8,6 +8,7 @@ class Player:
     lives = 3
     directionRight = 1
     pNum = 1
+    damage = 10
     #Constructor
     def __init__(self,x,y,pNum):
         self.x = x
@@ -16,6 +17,7 @@ class Player:
         self.lives = 3
         self.pDirection = 1
         self.pNum = pNum
+        self.damage = 10
     #Methods
     def display(self):
         if self.pNum == 1:
