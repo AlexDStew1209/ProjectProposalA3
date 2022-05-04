@@ -13,7 +13,7 @@ class Powerup:
             image(defence, 750, 500)
         elif powerUpType == 1:
             attack = loadImage("attack.png")
-            Image(attack, 750, 500
+            Image(attack, 750, 500)
         elif powerUpType == 2:
             health = loadImage("health.png")
             mage(health, 750, 500)
