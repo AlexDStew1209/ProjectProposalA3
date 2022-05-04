@@ -5,7 +5,7 @@ class Player:
     x = 0
     y = 0
     health = 100
-    lives = 3
+    deaths = 0
     directionRight = 1
     pNum = 1
     damage = 10
@@ -14,7 +14,7 @@ class Player:
         self.x = x
         self.y = y
         self.health = 100
-        self.lives = 3
+        self.deaths = 0
         self.pDirection = 1
         self.pNum = pNum
         self.damage = 10
