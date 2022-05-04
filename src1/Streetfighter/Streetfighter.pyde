@@ -32,12 +32,16 @@ def draw():
         
         
 def playScreen():
-    background1 = loadImage("BackgroundForSpaceKerfuffle.png")
-    imageMode(CORNER)
-    image(background1,100,100)
-    p1.display()
-    p2.display()
-    scoreboard()
+    if p1.deaths == 3 or p2.deaths == 3:
+        screenLayer = 3
+    else:
+        background1 = loadImage("BackgroundForSpaceKerfuffle.png")
+        imageMode(CORNER)
+        image(background1,100,100)
+        p1.display()
+        p2.display()
+        scoreboard()
+        gameOverLogic()
     
 
 def startScreen():
@@ -102,15 +106,15 @@ def keyPressed():
 
 def player1PlayerAttackDetection():
     if dist(p1.x,p1.y,p2.x,p2.y) < 43:
-        p2.health = p2.health - p1.damage
+        p2.health = (p2.health - p1.damage)
         
         
 def player2PlayerAttackDetection():
     if dist(p1.x,p1.y,p2.x,p2.y) < 43:
-        p1.health = p1.health - p2.damage
+        p1.health = (p1.health - p2.damage)
         
 def endScreen():
-    logo = loadImage("")
+    #logo = loadImage("")
     background(40)
     fill (60)
     rect(250,25,1000,200)
@@ -135,3 +139,25 @@ def scoreboard():
     textAlign(CENTER)
     text(p1.health,100,50)
     text(p2.health,200,50)
+    text(p1.deaths,300,50)
+    text(p2.deaths,400,50)
+    
+    
+def gameOverLogic():
+    if p1.health <= 0:
+        p1.deaths += 1
+        p1.health = 100
+        p2.health = 100
+        p1.x = 200
+        p1.y =200
+        p2.x = 500
+        p2.y =200
+    if p2.health <= 0:
+        p2.deaths += 1
+        p1.health = 100
+        p2.health = 100
+        p1.x = 200
+        p1.y = 200
+        p2.x = 500
+        p2.y = 200
+    
