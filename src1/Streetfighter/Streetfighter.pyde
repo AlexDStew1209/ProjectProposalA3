@@ -9,6 +9,8 @@ from Player import *
 # c4 = Powerup()
 # c5 = Shield()
 screenLayer = 0
+winner = 0
+roundNum = 1
 p1 = Player(200,200,1)
 p2 = Player(500,200,2)
 
@@ -32,14 +34,17 @@ def draw():
         
         
 def playScreen():
+    global screenLayer
     if p1.deaths == 3 or p2.deaths == 3:
         screenLayer = 3
     else:
+        background(50)
         background1 = loadImage("BackgroundForSpaceKerfuffle.png")
         imageMode(CORNER)
         image(background1,100,100)
         p1.display()
         p2.display()
+        rectMode(CORNER)
         fill(255,0,0)
         rect(100,850,1300,50)
         scoreboard()
@@ -116,38 +121,58 @@ def player2PlayerAttackDetection():
         p1.health = (p1.health - p2.damage)
         
 def endScreen():
-    #logo = loadImage("")
+    global winner
+    logo = loadImage("Logo.png")
+    if p1. deaths == 3:
+        winner = 2
+    elif p2.deaths == 3:
+        winner = 1
     background(40)
     fill (60)
     rect(250,25,1000,200)
     fill(255)
     textSize(170)
     textAlign(CENTER)
-    text("Player x Wins!",750,175)
+    text("Player    Wins!",750,175)
+    text(winner,775,175)
     fill(60)
     rect(200,250,1100,700)
     textAlign(CENTER)
     textSize(60)
     fill(255)
-    text("Health: ",750,350)
+    text("Won 3 out of     rounds ",750,350)
+    text(roundNum,815,350)
     textSize(40)
     text("Thank you for playing Space Kerfuffle",750,500)
     text("By Alex Stewart, Jasper Mowdood and Stuart Pahnke ",750,550)
     textSize(70)
     text("To play again, press x",750,900)
+    imageMode(CENTER)
+    image(logo,750,700,250,250)
     
 def scoreboard():
-    textSize(40)
+    textSize(50)
     textAlign(CENTER)
-    text(p1.health,100,50)
-    text(p2.health,200,50)
-    text(p1.deaths,300,50)
-    text(p2.deaths,400,50)
+    rectMode(CORNER)
+    fill(100)
+    stroke(255,0,0)
+    strokeWeight(4)
+    rect(40,10,200,75)
+    fill(0)
+    text("Round: ",125,60)
+    text(roundNum, 220,60)
+    text(p1.health,500,50)
+    text(p2.health,600,50)
+    text(p1.deaths,700,50)
+    text(p2.deaths,800,50)
+    strokeWeight(1)
     
     
 def gameOverLogic():
+    global roundNum
     if p1.health <= 0:
         p1.deaths += 1
+        roundNum += 1
         p1.health = 100
         p2.health = 100
         p1.x = 200
@@ -156,6 +181,7 @@ def gameOverLogic():
         p2.y =200
     if p2.health <= 0:
         p2.deaths += 1
+        roundNum += 1
         p1.health = 100
         p2.health = 100
         p1.x = 200
