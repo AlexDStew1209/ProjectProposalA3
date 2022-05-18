@@ -141,7 +141,7 @@ def endScreen():
     textSize(60)
     fill(255)
     text("Won 3 out of     rounds ",750,350)
-    text(roundNum,815,350)
+    text(roundNum - 1,815,350)
     textSize(40)
     text("Thank you for playing Space Kerfuffle",750,500)
     text("By Alex Stewart, Jasper Mowdood and Stuart Pahnke ",750,550)
