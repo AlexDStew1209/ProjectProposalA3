@@ -1,13 +1,8 @@
-# from Arm import *
 # from Platform import *
 from Player import *
-# from Powerup import *
-# from Shield import *
-# c1 = Arm()
+from Powerup import *
 # c2 = Platform()
-# c3 = Player()
 # c4 = Powerup()
-# c5 = Shield()
 screenLayer = 0
 winner = 0
 roundNum = 1
@@ -49,6 +44,8 @@ def playScreen():
         rect(100,850,1300,50)
         scoreboard()
         gameOverLogic()
+        powerUp = Powerup()
+        powerUp.display()
 
 
 def startScreen():
