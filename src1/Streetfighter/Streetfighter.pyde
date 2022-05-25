@@ -54,9 +54,8 @@ def playScreen():
         powerUp.display()
         #powerUpLogic()
         p1.down()
-        groundDetection()
         p2.down()
-        groundDetection2()
+        borderDetection()
         
 def powerUpLogic():
         # if p1.health <= 50:
@@ -148,12 +147,24 @@ def keyPressed():
             p2.attack()
             player2PlayerAttackDetection()
             
-def groundDetection():
+def borderDetection():
     if p1.y > (700):
-            p1.y = 700
-def groundDetection2():
+        p1.y = 700
     if p2.y > (700):
-            p2.y = 700
+        p2.y = 700
+    if p1.x > (1275):
+        p1.x = 1275
+    if p2.x > (1275):
+        p2.x = 1275
+    if p1.x < (28):
+        p1.x = 28
+    if p2.x < (28):
+        p2.x = 28
+    if p1.y < (90):
+        p1.y = 90
+    if p2.y < (90):
+        p2.y = 90
+
 
 def player1PlayerAttackDetection():
     if dist(p1.x,p1.y,p2.x,p2.y) < 43:
@@ -241,17 +252,17 @@ def gameOverLogic():
         roundNum += 1
         p1.health = 100
         p2.health = 100
-        p1.x = 200
-        p1.y =200
-        p2.x = 500
-        p2.y =200
+        p1.x = 300
+        p1.y = 650
+        p2.x = 1000
+        p2.y = 650
     if p2.health <= 0:
         p2.deaths += 1
         roundNum += 1
         p1.health = 100
         p2.health = 100
-        p1.x = 200
-        p1.y = 200
-        p2.x = 500
-        p2.y = 200
+        p1.x = 300
+        p1.y = 650
+        p2.x = 1000
+        p2.y = 650
     
