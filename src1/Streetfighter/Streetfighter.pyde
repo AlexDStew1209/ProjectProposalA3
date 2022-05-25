@@ -6,8 +6,8 @@ from Powerup import *
 screenLayer = 0
 winner = 0
 roundNum = 1
-p1 = Player(200,200,1)
-p2 = Player(500,200,2)
+p1 = Player(300,650,1)
+p2 = Player(1000,650,2)
 worldy = 1000
 worldx = 1500
 pu1 = Powerup(1,50)
