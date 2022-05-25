@@ -43,15 +43,15 @@ class Player:
         self.y += 2.5
         
     def moveRight(self):
-        self.x += 7
+        self.x += 10
         self.pDirection = 1
         
     def moveLeft(self):
-        self.x -= 7
+        self.x -= 10
         self.pDirection = 2
         
     def moveUp(self):
-        self.y -= 5
+        self.y -= 20
         
     def attack(self):
         if self.pDirection == 1 or self.pDirection == 3:
