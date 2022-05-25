@@ -8,10 +8,11 @@ winner = 0
 roundNum = 1
 p1 = Player(200,200,1)
 p2 = Player(500,200,2)
-
+worldy = 1000
+worldx = 1500
 
 def setup():
-    size(1500, 1000)
+    size(worldx, worldy)
     background(151, 50, 201)
     
     
@@ -46,6 +47,10 @@ def playScreen():
         gameOverLogic()
         #powerUp = Powerup()
         #powerUp.display()
+        p1.down()
+        groundDetection()
+        p2.down()
+        groundDetection2()
         
 def powerUpLogic():
     pu1 = Powerup(1,50)
@@ -125,6 +130,13 @@ def keyPressed():
         elif key == 'h':
             p2.attack()
             player2PlayerAttackDetection()
+            
+def groundDetection():
+    if p1.y > (700):
+            p1.y = 700
+def groundDetection2():
+    if p2.y > (700):
+            p2.y = 700
 
 def player1PlayerAttackDetection():
     if dist(p1.x,p1.y,p2.x,p2.y) < 43:
