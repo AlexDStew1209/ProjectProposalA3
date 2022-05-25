@@ -10,6 +10,11 @@ p1 = Player(200,200,1)
 p2 = Player(500,200,2)
 worldy = 1000
 worldx = 1500
+pu1 = Powerup(1,50)
+pu2 = Powerup(2,75)
+pu3 = Powerup(3,100)
+pu4 = Powerup(1,125)
+
 
 def setup():
     size(worldx, worldy)
@@ -45,31 +50,43 @@ def playScreen():
         rect(100,850,1300,50)
         scoreboard()
         gameOverLogic()
-        #powerUp = Powerup()
-        #powerUp.display()
+        powerUp = Powerup(1,800)
+        powerUp.display()
+        #powerUpLogic()
         p1.down()
         groundDetection()
         p2.down()
         groundDetection2()
         
 def powerUpLogic():
-    pu1 = Powerup(1,50)
-    pu2 = Powerup(2,75)
-    pu3 = Powerup(3,100)
-    pu4 = Powerup(1,125)
+        # if p1.health <= 50:
+    #     pu1.x = int(random(150,1350))
+    # if p2.health <= 50:
+    #     pu2.x = int(random(150,1350))
+    # if p1.health <= 25:
+    #     pu3.x = int(random(150,1350))
+    # if p2.health <= 25:
+    #     pu4.x = int(random(150,1350))
     pu1.display()
     pu2.display()
     pu3.display()
     pu4.display()
-    if p1.health <= 50:
-        pu1.x = int(random(150,1350))
-    if p2.health <= 50:
-        pu2.x = int(random(150,1350))
-    if p1.health <= 25:
-        pu3.x = int(random(150,1350))
-    if p2.health <= 25:
-        pu4.x = int(random(150,1350))
-    
+    #pu1
+    # if dist(p1.x,p1.y,pu1.x,pu1.y) < 25:
+    #     if pu1.type == 0:
+    #         p2.damage = p2.damage/2
+    #     elif pu1.type == 1:
+    #         p1.damage = p1.damage * 2
+    #     elif pu1.type == 2:
+    #         p1.health += 25
+    # if dist(p2.x,p2.y,pu1.x,pu1.y) < 25:
+    #     if pu1.type == 0:
+    #         p1.damage = p1.damage/2
+    #     elif pu1.type == 1:
+    #         p2.damage = p2.damage * 2
+    #     elif pu1.type == 2:
+    #         p2.health += 25
+    #pu2
 
 def startScreen():
     logo = loadImage("Logo.png")
