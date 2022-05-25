@@ -14,7 +14,7 @@ Group Members: Alex Stewart, Jasper Mowdood, Stuart Pahnke
 
 ![Gameplay](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/GuiMockup2.png?raw=true)
 
-## Image #3 (End of Game)
+## Image #4 (End of Game)
 
 ![End of Game](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/GUIMockup2.jpg?raw=true)
 
