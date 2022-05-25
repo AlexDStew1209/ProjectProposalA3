@@ -40,18 +40,18 @@ class Player:
             image(pPunchL,self.x,self.y)
 
     def down(self):
-        self.y += 2.5
+        self.y += 3
         
     def moveRight(self):
-        self.x += 10
+        self.x += 15
         self.pDirection = 1
         
     def moveLeft(self):
-        self.x -= 10
+        self.x -= 15
         self.pDirection = 2
         
     def moveUp(self):
-        self.y -= 20
+        self.y -= 30
         
     def attack(self):
         if self.pDirection == 1 or self.pDirection == 3:
