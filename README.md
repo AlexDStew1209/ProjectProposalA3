@@ -1,16 +1,16 @@
-# Project Proposal 1: Minesweeper!
-desription of the project: Minesweeper Game. 16x16 grid, with 40 mines. Will use mouse to select squares and flag a square if there is a mine in that square. Mines are laid out randomly.
+# Street Kerfuffle!!
+desription of the project: 1v1 pvp fighting game with special abilities and attacks. Will use keyboard one player will use wasd and one will use arrowkeys. A gravity function will pull players to the platforms. Goals is to push the other player of, or to remove all of their health through attacks.
 Group Members: Alex Stewart, Jasper Mowdood, Stuart Pahnke
 
-## GUI Mockup #1 (Start screen)
+## Image #1 (Start screen)
 
 ![start Screen](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/explosion%20(1).png?raw=true)
 
-## GUI Mockup #2 (Gameplay)
+## Image #2 (Gameplay)
 
 ![Gameplay](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/GuiMockup2.png?raw=true)
 
-## GUI Mockup #3 (End of Game)
+## Image #3 (End of Game)
 
 ![End of Game](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/GUIMockup2.jpg?raw=true)
 
