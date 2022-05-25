@@ -114,7 +114,7 @@ def instructScreen():
     text("To Win:", 750,350)
     textSize(56)
     #text("Push your opponent off the board:", 750,425)
-    text("Or remove all their health", 750,500)
+    text("Remove all of your opponents health", 750,500)
     textSize(68)
     text("Press space to continue", 750,600)
         
