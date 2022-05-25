@@ -39,7 +39,8 @@ class Player:
         elif self.pDirection == 4:
             image(pPunchL,self.x,self.y)
 
-            
+    def down(self):
+        self.y += 2.5
         
     def moveRight(self):
         self.x += 7
