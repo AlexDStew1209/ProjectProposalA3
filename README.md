@@ -4,19 +4,19 @@ Group Members: Alex Stewart, Jasper Mowdood, Stuart Pahnke
 
 ## Image #1 (Start screen)
 
-![start Screen](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/explosion%20(1).png?raw=true)
+![start Screen](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/StartScreen.png)
 
 ## Image #2 (Instructions)
 
-![start Screen](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/explosion%20(1).png?raw=true)
+![start Screen](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/Instructions.png)
 
 ## Image #3 (Gameplay)
 
-![Gameplay](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/GuiMockup2.png?raw=true)
+![Gameplay](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/Gameplay.png)
 
 ## Image #4 (End of Game)
 
-![End of Game](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/GUIMockup2.jpg?raw=true)
+![End of Game](https://github.com/AlexDStew1209/ProjectProposalA3/blob/main/images/GameOver.png)
 
 
 
